@@ -4,15 +4,14 @@
       
 
       public function get() {
-        $this->html .= '<a href="index.php?controller=carController">Car
+        $this->html .= '<h1>User sign up. click  below:</h1>';
+        $this->html .= '<a href="index.php?controller=userController"> User
 	Controller</a>';
-	$this->html .= '<h1>Hello this is your homepage controller</h1>';
+	
 	session_start();
 	print_r($_SESSION);
       }
       public function post() {}
       public function put() {}
       public function delete() {}
-
-
     }

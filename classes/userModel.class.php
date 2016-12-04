@@ -1,7 +1,9 @@
 <?php
-  class carModel extends model {
+  class userModel extends model {
     private $username;
     private $password;
+    private $email;
+    private $gender;
     
     public function setUsername($username) {
       $this->username = $username;  
@@ -14,6 +16,18 @@
     }
     public function getPassword() {
       return $this->password;
+    }
+     public function setEmail($email) {
+      $this->email = $email;
+    }
+    public function getEmail() {
+      return $this->email;
+    }
+     public function setGender($gender) {
+      $this->gender = $gender;
+    }
+    public function getGender() {
+      return $this->gender;
     }
     
     public function save() {
